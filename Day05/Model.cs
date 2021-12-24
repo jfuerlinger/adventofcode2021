@@ -86,7 +86,7 @@ namespace Day05
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder();
+            StringBuilder sb = new();
             for (int row = 0; row < _field.GetLength(0); row++)
             {
                 for (int column = 0; column < _field.GetLength(1); column++)

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Day06": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_gcAllowVeryLargeObjects": "1"
+      }
+    }
+  }
+}
