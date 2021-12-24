@@ -24,7 +24,6 @@ void SolvePuzzle(string puzzleName, IEnumerable<NavigationLine> lines)
     Field fieldPart = new(GetDimension(lines));
     lines.ToList()
         .ForEach(line => fieldPart.AddNavigationLine(line));
-    //Console.WriteLine(fieldPart);
 
     Console.WriteLine($"Solution '{puzzleName}' -> fields of danger: {fieldPart.GetDangerousPositions()}");
 }
