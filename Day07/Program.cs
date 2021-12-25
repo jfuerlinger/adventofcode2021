@@ -1,9 +1,6 @@
 ﻿
 using Figgle;
 
-const int DaysToLive = 256;
-const int MaxAgeOfFish = 8;
-
 Console.WriteLine(FiggleFonts.Big.Render("AoC 2021 - Day 7"));
 
 string[] lines = await File.ReadAllLinesAsync("input.txt");
