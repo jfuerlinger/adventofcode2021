@@ -22,7 +22,7 @@ void SolvePuzzle(int[] crabPositions)
         bool isInefficient = false;
         for (int i = 0; i < crabPositions.Length; i++)
         {
-            movementsToTargetPos += Math.Abs(crabPositions[i] - targetPosition);
+            movementsToTargetPos += GetGausscheSumme(Math.Abs(crabPositions[i] - targetPosition));
             if (movementsToTargetPos > shortestWay)
             {
                 isInefficient = true;
@@ -46,6 +46,8 @@ int[] ExtractInformation(string input) =>
         .Split(",")
         .Select(entry => int.Parse(entry))
         .ToArray();
+
+int GetGausscheSumme(int nr) => ((nr * nr) + nr) / 2;
 
 
 
